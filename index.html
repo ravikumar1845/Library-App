@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Virtual Library App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>My Virtual Library App</h1>
+    </header>
+
+    <main>
+        <button id="newBookBtn">NEW BOOK</button>
+        <div id="bookshelf"></div>
+
+        <dialog id="bookDialog">
+            <form id="bookForm">
+                <h2>Add New Book</h2>
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" required>
+
+                <label for="author">Author:</label>
+                <input type="text" id="author" name="author" required>
+
+                <label for="pages">Number of Pages:</label>
+                <input type="number" id="pages" name="pages" required>
+
+                <label for="read">Have you read it?</label>
+                <input type="checkbox" id="read" name="read">
+
+                <button type="submit">Add Book</button>
+                <button type="button" id="cancelBtn">Cancel</button>
+            </form>
+        </dialog>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Virtual Library App # Made with ❤️ by Aakash Giri /p>
+    </footer>
+
+    <script src="script.js"></script>
+    <button id="scrollToTopBtn" title="Go to top">↑</button>
+</body>
+</html>
